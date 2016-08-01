@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.itheima.safeguard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <com.itheima.safeguard.ui.NormalItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_niv_phone_address_search"
+        app:desc="输入手机号，查询该号码的归属地"
+        app:icon="@drawable/ic_btn_search"
+        app:title="归属地查询" />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:background="#50000000" />
+
+    <com.itheima.safeguard.ui.NormalItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_niv_sms_backup"
+        app:desc="将短信全部备份到SD卡"
+        app:title="短信备份"
+        app:icon="@drawable/ic_menu_save" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:background="#50000000" />
+
+    <com.itheima.safeguard.ui.NormalItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_niv_sms_restore"
+        app:desc="将短信内容从备份文件还原到短信中"
+        app:icon="@drawable/ic_menu_archive"
+        app:title="短信还原" />
+
+</LinearLayout>

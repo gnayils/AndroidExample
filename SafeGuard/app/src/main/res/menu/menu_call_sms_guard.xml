@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.itheima.safeguard.SplashActivity" >
+
+   <item
+        android:id="@+id/action_add_block_number"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_add"
+        android:title="添加黑名单"/>
+
+</menu>
